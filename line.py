@@ -206,7 +206,7 @@ def usePreviousFits(binaryThresholded, lineLeft, lineRight, verbose=False):
     nonzero = binaryThresholded.nonzero()
     nonzero_y = np.array(nonzero[0])
     nonzero_x = np.array(nonzero[1])
-    margin = 100
+    margin = 30
     left_lane_inds = (
     (nonzero_x > (left_pixel[0] * (nonzero_y ** 2) + left_pixel[1] * nonzero_y + left_pixel[2] - margin)) & (
     nonzero_x < (left_pixel[0] * (nonzero_y ** 2) + left_pixel[1] * nonzero_y + left_pixel[2] + margin)))
