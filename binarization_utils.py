@@ -43,7 +43,7 @@ def applyEqWhiteMask(frame):
 
     eq = cv2.equalizeHist(gray)
 
-    _, th = cv2.threshold(eq, thresh=250, maxval=255, type=cv2.THRESH_BINARY)
+    _, th = cv2.threshold(eq, thresh=200, maxval=255, type=cv2.THRESH_BINARY)
 
     return th
 
