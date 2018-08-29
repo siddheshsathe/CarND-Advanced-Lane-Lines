@@ -99,6 +99,5 @@ if __name__ == '__main__':
 
             plt.imshow(cv2.cvtColor(blend, code=cv2.COLOR_BGR2RGB))
             plt.show()
-            break
     else:
         raise Exception('Mode was given incorrect. Please choosed among "images" or "video"')
