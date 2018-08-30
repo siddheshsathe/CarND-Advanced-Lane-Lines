@@ -92,7 +92,11 @@ In the file `warp_perspective` one can see how we calculated `M` and `Minv` matr
 Using this `M` and openCv's `warpPerspective()` method, a bird's eye view can be calculated.
 The `Minv` matrix will be used when we map the found lanes on the actual image/frame.
 
-![alt text][image4]
+<p>
+ <img src="./test_images/straight_lines1.jpg" width="40%" height="40%">Original
+ <img src="./output_images/warper_perspective.png" width="50%" height="50%">Warped
+<br>
+</p>
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
