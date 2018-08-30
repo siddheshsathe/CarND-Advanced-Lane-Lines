@@ -4,8 +4,8 @@
 [//]: # (Image References)
 
 [image1]: ./examples/undistort_output.png "Undistorted Image"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
+[image2]: ./output_images/test1_output.jpg "Road Transformed"
+[image3]: ./output_images/straight_lines1_binarized.jpg "Binary Example"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./output_images/straight_lines1.jpg "Output"
@@ -42,9 +42,16 @@ To calibrate the camera, I took below steps
 * This gave me the list of corners detected which were appended in a list for later use
 * Using these corners, I calibrated the camera with openCv's `calibrateCamera()` method which gave me
   > Camera calibration matrix (`mtx`) and distortion matrix (`dist`)
+  
   > Rotational vectors (`rvecs`) and translational vectors (`tvecs`)
 * Using the `mtx` and `dist` matrices, I undistorted the distorted image using openCv's `undistort()` method
-![alt text][image1]
+* Below is the exaple of distorted image converted to undistorted image
+
+<p>
+ <img src="./camera_cal/calibration1.jpg" width="40%" height="40%">Original
+ <img src="./undist_image_calibration1.jpg" width="40%" height="40%">Undistorted
+<br>
+</p>
 
 ### Pipeline (single images)
 
